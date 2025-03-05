@@ -9,9 +9,9 @@ const FloatingButton: React.FC<FloatingButtonProps> = ({ onClick }) => {
   return (
     <div style={{
       position: 'fixed',
-      bottom: '20px',
+      bottom: '100px',
       right: '20px',
-      zIndex: 1000, // Ensures it stays on top
+      zIndex: 1000,
     }}>
       <IconButton
         onClick={onClick}

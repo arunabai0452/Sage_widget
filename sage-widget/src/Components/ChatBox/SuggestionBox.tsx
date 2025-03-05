@@ -17,6 +17,9 @@ const Suggestions: React.FC<SuggestionsProps> = ({ suggestions, handleSendMessag
                 overflowX: 'auto',
                 alignItems: 'center',
                 width: '100%',
+                "@media (max-width: 768px)": {
+                    bottom: 60,
+                },
             }}
         >
             {suggestions.map((item) => (

@@ -112,6 +112,7 @@ const styles = {
     card: {
         backgroundColor: "rgba(0, 0, 0, 0.2)",
         padding: 3,
+        width: "100%",
         borderRadius: 2,
         display: 'flex',
         flexDirection: 'column',
@@ -122,7 +123,7 @@ const styles = {
         '&:hover': {
             backgroundColor: 'rgba(0, 0, 0, 0.1)',
         },
-        minHeight: '200px'
+        minHeight: '200px',
     },
     highlightedCard: {
         borderColor: "#0094FF",

@@ -65,6 +65,40 @@
     border-top-right-radius: 0;
 }
 
+.typing-indicator {
+    font-style: italic;
+    color: gray;
+}
+
+.dot {
+    opacity: 0;
+    animation: blink 1.5s infinite;
+}
+
+.dot.one {
+    animation-delay: 0s;
+}
+
+.dot.two {
+    animation-delay: 0.3s;
+}
+
+.dot.three {
+    animation-delay: 0.6s;
+}
+
+@keyframes blink {
+
+    0%,
+    80%,
+    100% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+}
 .chatbox-footer {
     align-items: center;
     padding: 20px;

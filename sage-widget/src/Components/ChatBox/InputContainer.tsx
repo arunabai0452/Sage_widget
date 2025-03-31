@@ -50,6 +50,12 @@ const InputContainer: React.FC<InputContainerProps> = ({ setUserInput, userInput
                 size='small'
                 fullWidth
                 onChange={(e) => setUserInput(e.target.value)}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter' && !e.shiftKey) {
+                        e.preventDefault();  // Prevent new line if multiline in future
+                        handleSendMessage(userInput);
+                    }
+                }}
                 sx={{
                     flexGrow: 1,
                     marginLeft: 1,
